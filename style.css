@@ -1,0 +1,211 @@
+:root {
+    --primary: #0f4c81;
+    --secondary: #167f92;
+    --accent: #76c7c0;
+    --background: #eef6f9;
+    --surface: #ffffff;
+    --text: #102d44;
+    --muted: #0f4c81; /* changed from grey to dark blue */
+    --border: #d5e5ea;
+}
+
+body {
+    background: var(--background);
+    color: #102d44 !important;
+    font-family: "Inter", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+.stApp {
+    background: linear-gradient(180deg, #f5fafc 0%, #e6f3f7 100%);
+}
+
+header .decoration {
+    display: none !important;
+}
+
+section.main .block-container {
+    padding: 2rem 2rem 3rem 2rem;
+    max-width: 1600px;
+}
+
+.css-1d391kg,
+.css-1v0mbdj,
+.element-container {
+    border-radius: 24px !important;
+}
+
+/* BUTTON */
+.stButton > button {
+    border-radius: 16px !important;
+    background-color: var(--primary) !important;
+    color: #ffffff !important; /* white text for button */
+    border: none !important;
+    box-shadow: 0 18px 40px rgba(15, 76, 129, 0.18);
+    padding: 0.85rem 1.4rem !important;
+    font-weight: 600;
+}
+
+.stButton > button:hover {
+    background-color: #0b3e65 !important;
+}
+
+/* INPUT FIELDS */
+.stTextInput > div > div > input,
+.stNumberInput > div > div > input,
+.stDateInput > div > div > input {
+    border-radius: 16px !important;
+    border: 1px solid var(--border) !important;
+    padding: 0.95rem !important;
+    background: #fbfcfd !important;
+    color: #0f4c81 !important; /* DARK BLUE */
+}
+
+/* LABELS */
+label,
+.stTextInput label,
+.stNumberInput label,
+.stDateInput label,
+.stSelectbox label,
+.stTextArea label {
+    color: #0f4c81 !important;
+    font-weight: 600 !important;
+}
+
+/* HEADINGS */
+.stMarkdown h1,
+.stMarkdown h2,
+.stMarkdown h3,
+.stMarkdown h4 {
+    color: #0f4c81 !important;
+    font-weight: 700;
+}
+
+/* TEXT */
+.stMarkdown p,
+.stMarkdown li,
+p,
+span,
+div {
+    color: #102d44 !important;
+}
+
+/* SIDEBAR */
+section[data-testid="stSidebar"] * {
+    color: #0f4c81 !important; /* dark blue */
+}
+
+/* SELECTBOX */
+div[data-baseweb="select"] > div {
+    background: #ffffff !important;
+    color: #0f4c81 !important;
+}
+
+div[data-baseweb="select"] span {
+    color: #0f4c81 !important;
+}
+
+/* DROPDOWN OPTIONS */
+ul[role="listbox"] {
+    background: #ffffff !important;
+}
+
+ul[role="listbox"] li {
+    color: #0f4c81 !important;
+    background: #ffffff !important;
+}
+
+/* CARDS */
+.element-container {
+    background: var(--surface) !important;
+    padding: 1.7rem !important;
+    box-shadow: 0 20px 50px rgba(16, 45, 68, 0.06) !important;
+}
+
+/* METRICS */
+.css-18ni7ap.e16nr0p30,
+.stAlert,
+.stMetric {
+    background-color: rgba(22, 127, 146, 0.08) !important;
+}
+
+[data-testid="stMetricLabel"] {
+    color: #0f4c81 !important;
+}
+
+[data-testid="stMetricValue"] {
+    color: #0f4c81 !important;
+    font-weight: 700 !important;
+}
+
+/* ALERT TEXT */
+.stSuccess,
+.stInfo,
+.stWarning,
+.stError {
+    color: #0f4c81 !important;
+}
+
+/* TABLE */
+.stDataFrame table {
+    border-radius: 18px !important;
+    overflow: hidden !important;
+}
+
+.stDataFrame th {
+    background: #f0f6f9 !important;
+    color: #0f4c81 !important;
+
+/* Improve global text contrast and visibility for Streamlit widgets */
+.stApp, .stApp * {
+    color: var(--text) !important;
+}
+
+/* Sidebar headings and labels */
+.stSidebar .stMarkdown h1, .stSidebar .stMarkdown h2, .stSidebar .stMarkdown h3 {
+    color: var(--primary) !important;
+}
+
+/* Make metric labels and values readable */
+[data-testid="stMetricLabel"] {
+    color: var(--muted) !important;
+}
+
+[data-testid="stMetricValue"] {
+    color: var(--primary) !important;
+    font-weight: 700 !important;
+}
+
+/* Ensure chart text is visible */
+.js-plotly-plot .plotly .main-svg text {
+    fill: var(--text) !important;
+}
+
+/* Accessible focus outlines for keyboard navigation */
+button:focus, input:focus, select:focus, textarea:focus {
+    outline: 3px solid rgba(22,127,146,0.18) !important;
+    outline-offset: 2px !important;
+}
+}
+
+.stDataFrame td {
+    color: #102d44 !important;
+}
+
+/* EXPANDERS */
+.streamlit-expanderHeader,
+[data-testid="stExpander"] {
+    color: #0f4c81 !important;
+    background: #ffffff !important;
+}
+
+/* FOOTER */
+footer {
+    display: none;
+}
+
+.footer {
+    margin-top: 2rem;
+    text-align: center;
+    color: #0f4c81 !important;
+    font-size: 0.95rem;
+}
