@@ -32,7 +32,7 @@ def create_table():
                 """
             )
             conn.commit()
-        _initialize_sample_data()
+        
     except sqlite3.Error as error:
         raise RuntimeError(f"Unable to initialize database: {error}") from error
 
